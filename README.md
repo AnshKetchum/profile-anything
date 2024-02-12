@@ -12,7 +12,14 @@ with C++, and work is being done to add Python bindings in order for it to becom
 ## Installation
 You can use the `Makefile` provided for a 2-3 command installation. 
 Steps are the following:
-1. 
+
+Local Setup
+1. Build the C++ API. `make build`
+2. Execute any profiled code (develop this in the `src` folder) with `make run`
+
+Docker Setup
+1. Build the docker image (make sure you have docker installed!) using `make docker/build`
+2. Run the image with `make docker/run`
 
 ## Quickstart 
 Copy over the `PerfEvent.hpp` headers from the `include` directory. The `src/HyperProfiler.cpp/h` files contain a simple API that can be used to interact with Perf in your C++ (and eventually Python) code.
