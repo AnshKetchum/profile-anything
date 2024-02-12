@@ -6,7 +6,13 @@ This project is an attempt to extend the marvelous work done by Viktor Leis in h
 with C++, and work is being done to add Python bindings in order for it to become accessible via pip.
 
 ## Features
+- Support for Docker builds and reproducible testing in isolated environments
 - Obtain *hardware-level* metrics like the L1 Cache Miss Rate, Instructions, Cycles, CPU usage, and many more.
+
+## Installation
+You can use the `Makefile` provided for a 2-3 command installation. 
+Steps are the following:
+1. 
 
 ## Quickstart 
 Copy over the `PerfEvent.hpp` headers from the `include` directory. The `src/HyperProfiler.cpp/h` files contain a simple API that can be used to interact with Perf in your C++ (and eventually Python) code.
@@ -38,3 +44,8 @@ int main()
     return 0;
 }
 ```
+
+## Todo
+1. Complete Python bindings, and make package available under PyPI.
+
+This repo is being actively maintained as of Feb 2024. Facing bugs, Have some more suggestions about what should be done next? Open up an ISSUE!
