@@ -5,7 +5,7 @@ project(tutorial)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Adding a basic addition executable
-add_executable(profile src/main.cpp src/HyperProfiler.h src/HyperProfiler.cpp)
+add_executable(profile src/main.cpp src/hyperprofiler.h src/hyperprofiler.cpp)
 add_library(profiler_lib SHARED src/main.cpp)
 
 # Setup testing

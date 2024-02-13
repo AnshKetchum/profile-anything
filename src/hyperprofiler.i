@@ -1,7 +1,10 @@
-%module swigdemo
+%module hyperprofiler
 
 %{
-#include "HyperProfiler.h"
+#include "hyperprofiler.h"
 %}
 
-%include "HyperProfiler.h"
+%include <std_string.i>
+using namespace std;
+
+%include hyperprofiler.h

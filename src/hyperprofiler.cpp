@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "HyperProfiler.h"
+#include "hyperprofiler.h"
 #include "PerfEvent.hpp"
 
 void HyperProfiler::startProfiling() {

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "HyperProfiler.h"
+#include "hyperprofiler.h"
 
 using namespace std;
 
